@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Jane</title>
+  <style>
+    .landing-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 97vh;
+        background: #F9F5F2;
+        color: #2D2D2D;
+        padding: 0px;
+    }
+    .landing-header {
+        text-align: center;
+        padding: 20px;
+    }
+    .landing-header h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .landing-header p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .landing-header button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        background-color: #5E50A1;
+        color: #FFFFFF;
+    }
+    .landing-header button:hover {
+        background-color: #FF6B6B;
+    }
+    /* Modal Styles */
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    }
+
+    .modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* 10% from top and centered */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 700px; /* Maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    .close-button:hover,
+    .close-button:focus {
+    color: #000;
+    text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="landing-container">
+    <header class="landing-header">
+      <h1>Welcome to Jane</h1>
+      <p>Discover, create, and explore prompts for AI models.</p>
+      <button id="get-started">Get Started</button>
+    </header>
+  </div>
+    <!-- Modal -->
+    <div id="form-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+<iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScUjIwfJwP_y9yW98Ni9tW1EjwBfFjOHcnVzpNOMJYayJ9a5A/viewform?embedded=true"
+            width="100%"
+            height="400"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+          </iframe>
+        </div>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
