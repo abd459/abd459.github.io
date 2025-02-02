@@ -1,92 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>janeXplain</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>janeXplain - Enterprise AI Assurance</title>
   <style>
-    .landing-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 97vh;
-        background: #F9F5F2;
-        color: #2D2D2D;
-        padding: 0px;
-    }
-    .landing-header {
-        text-align: center;
-        padding: 20px;
-    }
-    .landing-header h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
-    .landing-header p {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-    }
-    .landing-header button {
-        padding: 10px 20px;
-        font-size: 1rem;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-        background-color: #5E50A1;
-        color: #FFFFFF;
-    }
-    .landing-header button:hover {
-        background-color: #FF6B6B;
-    }
-    /* Modal Styles */
-    .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-    }
+  /* Modal Styles */
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  }
 
-    .modal-content {
-    background-color: #fff;
-    margin: 10% auto; /* 10% from top and centered */
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%; /* Adjust width as needed */
-    max-width: 700px; /* Maximum width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+  .modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* 10% from top and centered */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* Adjust width as needed */
+  max-width: 700px; /* Maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-    .close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    }
+  .close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  }
 
-    .close-button:hover,
-    .close-button:focus {
-    color: #000;
-    text-decoration: none;
-    }
+  .close-button:hover,
+  .close-button:focus {
+  color: #000;
+  text-decoration: none;
+  }
 
-  </style>
+</style>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body>
-  <div class="landing-container">
-    <header class="landing-header">
-      <h1>Welcome to janeXplain</h1>
-      <p>Helping build robust, compliant and secure AI solutions with enterprize-grade trustworthiness</p>
-      <button id="get-started">Request a demo</button>
-    </header>
-  </div>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-800 text-white shadow-md">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">janeXplain</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:underline transition duration-300">About</a></li>
+          <li><a href="#solutions" class="hover:underline transition duration-300">Solutions</a></li>
+          <li><a href="#team" class="hover:underline transition duration-300">Team</a></li>
+          <li><a href="#contact" class="hover:underline transition duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-2xl">
+      <h2 class="text-4xl font-bold mb-6">
+        Building Robust, Compliant, and Secure AI Solutions
+      </h2>
+      <p class="text-lg mb-8 leading-relaxed">
+        Harnessing transformer’s latent representations to deliver natively explainable assurance.
+      </p>
+      <a href="#solutions" class="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300">
+        Explore Solutions
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+      <h3 class="text-3xl font-bold mb-6 text-center">Why Choose Us?</h3>
+      <p class="text-lg mb-6 leading-relaxed">
+        We enable scalable oversight, trustworthy decisions, and customized enforcers to ensure robustness, explainability, and compliance for enterprise AI systems.
+      </p>
+      <ul class="list-disc list-inside space-y-3 text-lg">
+        <li>Scalable Oversight with low-cost SoTA performance.</li>
+        <li>Native explainability for trustworthy decision-making.</li>
+        <li>Customized enforcers tailored to dynamic policies.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-3xl font-bold mb-12 text-center">Our Solutions</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center bg-gray-100 p-8 rounded-lg shadow-sm">
+          <h4 class="text-xl font-bold mb-3">Explainable Compliance</h4>
+          <p class="text-base leading-relaxed">
+            Provide natively explainable decisions with active adaptation and scalable oversight.
+          </p>
+        </div>
+        <div class="text-center bg-gray-100 p-8 rounded-lg shadow-sm">
+          <h4 class="text-xl font-bold mb-3">Red-Teaming</h4>
+          <p class="text-base leading-relaxed">
+            Adapt stimuli to evolving policies and threats for proactive assurance.
+          </p>
+        </div>
+        <div class="text-center bg-gray-100 p-8 rounded-lg shadow-sm">
+          <h4 class="text-xl font-bold mb-3">Custom Enforcement</h4>
+          <p class="text-base leading-relaxed">
+            Develop business-specific policy enforcers to manage contextual requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
+      <h3 class="text-3xl font-bold mb-8">About Us</h3>
+      <p class="text-lg leading-relaxed">
+        We are a stealth-mode startup dedicated to accelerating the productization of enterprise-grade LLM applications and AI agents. Our mission is to enhance trust and transparency in the operation and decision-making processes of these models, ensuring they meet the highest standards of reliability and accountability.
+      </p>
+      <p class="text-lg leading-relaxed mt-6">
+        Our team brings together world-class academic excellence and deep industry expertise, with backgrounds from UC Berkeley, Stanford, and IIT. With a track record of 35+ patents and successful startup exits, we have pioneered industry-first innovations in Generative AI and assurance technologies.
+      </p>
+      <p class="text-lg leading-relaxed mt-6">
+        By bridging cutting-edge research with practical deployment, we are shaping the future of trustworthy AI.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-xl">
+      <h3 class="text-3xl font-bold mb-8">Get in Touch</h3>
+      <p class="mb-8 text-lg">
+        Want to learn more about how we can help your enterprise?
+      </p>
+      <button class="bg-blue-600 text-white py-3 px-8 rounded-md hover:bg-blue-700 transition duration-300" id="get-started">Contact Us</button>
+      <!-- <a href="mailto:info@janexplain.com" class="bg-blue-600 text-white py-3 px-8 rounded-md hover:bg-blue-700 transition duration-300"> -->
+      <!-- </a> -->
+    </div>
+  </section>
     <!-- Modal -->
     <div id="form-modal" class="modal">
         <div class="modal-content">
@@ -102,5 +162,12 @@
         </div>
       </div>
   <script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-6">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-sm">&copy; 2025 janeXplain. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
